@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cheese, please!</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome">
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Cheese, please!</h1>
+			<h2>A cheese-based recipe search engine. Because sometimes cheese is the only food group.</h2>
+		
+		<form id="selectCheeseForm">
+			<select class="selectCheese">
+				<option value="" disabled selected>Pick your cheese  &#8659;</i></option>
+	  			<option value="cheddar">Cheddar</option>
+	  			<option value="brie">Brie</option>
+	 			<option value="swiss cheese">Swiss</option>
+	 			<option value="blue cheese">Blue Cheese</option>
+			 	<option value="mozzarella">Mozzarella</option>
+			 	<option value="feta">Feta</option>
+			 	<option value="gruyère">Gruyère</option>
+			 	<option value="goat cheese">Goat's Cheese</option>
+			 	<option value="cream cheese">Cream Cheese</option>
+			 	<option value="ricotta">Ricotta</option>
+			 	<option value="vegan">Vegan 'Cheez'</option>
+			</select>
+			<select class="selectMeal">
+				<option value="" disabled selected>Pick your meal  &#8659;</option>
+				<option value="course^course-Breakfast and Brunch">Breakfast</option>
+				<option value="course^course-Lunch and Snacks">Lunch &amp; Snacks</option>
+				<option value="course^course-Appetizers">Appetizers</option>
+	  			<option value="course^course-Main Dishes">Dinner</option>
+			 	<option value="course^course-Desserts">Dessert</option>
+			</select>
+			<a href="#recipeForm"><input type="submit" value="Find recipes"></a>
+		</form>
+		<div class="arrow animate bounce hide"><a href="#recipes"><i class="fa fa-angle-double-down"></i></a></div>
+		</header>
+	</div> <!-- closes wrapper -->
+	
+	<div class="container" id="recipes">
+	</div>
+	<form id="recipeForm" class="hide">
+		<input type="submit" id="inputButton" value="Show More Recipes">
+	</form>
+	<footer>
+		<a class="icon-twitter" rel="nofollow" href="http://twitter.com/" onclick="popUp=window.open('http://twitter.com/intent/tweet?text=\In the mood for something cheesy? Head over to cheeseplease.recipes to search for delicious cheese-based recipes.','popupwindow','scrollbars=yes,width=800,height=400'); popUp.focus();return false">
+    	<i class="fa fa-twitter"></i>
+		<p>&copy; <a href="https://twitter.com/lauraand_">Laura Anderson</a> 2015</p>
+
+</a>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="underscore-min.js"></script>
+	<script src="main.js"></script>
+
+	
+</body>
+</html>
